@@ -49,7 +49,12 @@ const CREATORS = [
 
 // Testimonials — static data
 const TESTIMONIALS = [
-  {
+ {
+    title: "Panther Playz",
+    type: "thumbnail",
+    image: "/uploads/panther-playz.png",
+    link: "#"
+  }, {
     name: 'Alex Rivera',
     role: 'Tech YouTuber • 500K subs',
     content: 'Zee completely transformed my channel\'s CTR. My views jumped 300% in just one month after using his thumbnails.',
