@@ -38,7 +38,7 @@ const PORTFOLIO_ITEMS = [
 
 // Creator avatars — local or external (these are small, load fast)
 const CREATORS = [
-  { name: 'Alex Rivera', avatar: 'https://i.pravatar.cc/150?img=1' },
+  { name: 'Jonathan Gaming', avatar: 'https://i.postimg.cc/vBw4Z3bn/channels4-profile.jpg' },
   { name: 'Sarah Chen', avatar: 'https://i.pravatar.cc/150?img=5' },
   { name: 'Mike Johnson', avatar: 'https://i.pravatar.cc/150?img=3' },
   { name: 'Emma Wilson', avatar: 'https://i.pravatar.cc/150?img=9' },
@@ -50,10 +50,10 @@ const CREATORS = [
 // Testimonials — static data
 const TESTIMONIALS = [
   {
-    name: 'Alex Rivera',
+    name: 'Jonathan Gaming',
     role: 'Tech YouTuber • 500K subs',
     content: 'Zee completely transformed my channel\'s CTR. My views jumped 300% in just one month after using his thumbnails.',
-    avatar: 'https://i.pravatar.cc/150?img=1',
+    avatar: 'https://i.postimg.cc/vBw4Z3bn/channels4-profile.jpg',
   },
   {
     name: 'Sarah Chen',
