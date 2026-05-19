@@ -34,6 +34,7 @@ const PORTFOLIO_ITEMS = [
   { id: 14, title: 'Viper Is Live', image: '/uploads/thumb-viper.png', category: 'gaming', client: 'Viper' },
   { id: 15, title: 'Mr Champion Plays - Valorant', image: '/uploads/thumb-mrchampion.png', category: 'gaming', client: 'Mr Champion' },
   { id: 16, title: 'Mr Beast Style Copy', image: '/uploads/thumb-mrbeast.png', category: 'gaming', client: 'Mr Beast' },
+  { id: 17, title: 'Panther Playz', image: '/uploads/panther-playz.png', category: 'gaming', client: 'Panther Playz' },
 ];
 
 // Creator avatars — local or external (these are small, load fast)
