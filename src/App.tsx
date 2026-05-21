@@ -23,29 +23,29 @@ const PORTFOLIO_ITEMS = [
   { id: 3, title: 'WMax BGMI Gaming', image: '/uploads/thumb-wmax.png', category: 'gaming', client: 'BGMI Creator' },
   { id: 4, title: 'ANNY Gaming', image: '/uploads/thumb-anny.png', category: 'gaming', client: 'ANNY Gaming' },
   { id: 5, title: 'Power is Live Valom', image: '/uploads/thumb-power.png', category: 'gaming', client: 'Power Live' },
-  { id: 6, title: 'Tiger Is Live', image: '/uploads/thumb-tiger.png', category: 'gaming', client: 'Tiger' },
+    { id: 6, title: 'Tiger Is Live', image: 'https://i.postimg.cc/65nLsjrZ/Tiger-is-Live4-4.png', category: 'gaming', client: 'Tiger' },
   { id: 7, title: 'Anony', image: '/uploads/thumb-anony.png', category: 'gaming', client: 'Anony' },
   { id: 8, title: 'Bacchu', image: '/uploads/thumb-bacchu.png', category: 'gaming', client: 'Bacchu' },
   { id: 9, title: 'Jonathan', image: '/uploads/thumb-jonathan.png', category: 'gaming', client: 'Jonathan' },
   { id: 10, title: 'LOVU', image: '/uploads/thumb-lovu.jpg', category: 'gaming', client: 'LOVU' },
   { id: 11, title: 'Muzzi Is Live', image: '/uploads/thumb-muzzi.png', category: 'gaming', client: 'Muzzi' },
-  { id: 12, title: 'Snax', image: '/uploads/thumb-snax.png', category: 'gaming', client: 'Snax' },
+  { id: 12, title: 'Snax', image: 'https://i.postimg.cc/9QZPhRC2/Snax-Gaming-4-4.png', category: 'gaming', client: 'Snax' },
   { id: 13, title: 'Vicotor Playz', image: '/uploads/thumb-vicotor.png', category: 'gaming', client: 'Vicotor Playz' },
   { id: 14, title: 'Viper Is Live', image: '/uploads/thumb-viper.png', category: 'gaming', client: 'Viper' },
   { id: 15, title: 'Mr Champion Plays - Valorant', image: '/uploads/thumb-mrchampion.png', category: 'gaming', client: 'Mr Champion' },
   { id: 16, title: 'Mr Beast Style Copy', image: '/uploads/thumb-mrbeast.png', category: 'gaming', client: 'Mr Beast' },
-  { id: 17, title: 'Panther Playz', image: '/panther-playz.png', category: 'gaming', client: 'Panther Playz' },
+  { id: 17, title: 'Panther Playz', image: 'https://i.postimg.cc/0yvjzZLj/panther-playz-valom.png', category: 'gaming', client: 'Panther Playz' },
 ];
 
-// Creator avatars — local or external (these are small, load fast)
+// Creator avatars — local compressed images
 const CREATORS = [
-  { name: 'Alex Rivera', avatar: 'https://i.postimg.cc/vBw4Z3bn/channels4-profile.jpg' },
-  { name: 'Sarah Chen', avatar: 'https://i.pravatar.cc/150?img=5' },
-  { name: 'Mike Johnson', avatar: 'https://i.pravatar.cc/150?img=3' },
-  { name: 'Emma Wilson', avatar: 'https://i.pravatar.cc/150?img=9' },
-  { name: 'David Kim', avatar: 'https://i.pravatar.cc/150?img=8' },
-  { name: 'Lisa Park', avatar: 'https://i.pravatar.cc/150?img=10' },
-  { name: 'James Brown', avatar: 'https://i.pravatar.cc/150?img=11' },
+  { name: 'Alex Rivera', avatar: '/uploads/avatars/creator-0.jpg' },
+  { name: 'Sarah Chen', avatar: '/uploads/avatars/creator-1.jpg' },
+  { name: 'Mike Johnson', avatar: '/uploads/avatars/creator-2.jpg' },
+  { name: 'Emma Wilson', avatar: '/uploads/avatars/creator-3.jpg' },
+  { name: 'David Kim', avatar: '/uploads/avatars/creator-4.jpg' },
+  { name: 'Lisa Park', avatar: '/uploads/avatars/creator-5.jpg' },
+  { name: 'James Brown', avatar: '/uploads/avatars/creator-6.jpg' },
 ];
 
 // Testimonials — static data
@@ -54,44 +54,52 @@ const TESTIMONIALS = [
     name: 'Alex Rivera',
     role: 'Tech YouTuber • 500K subs',
     content: 'Zee completely transformed my channel\'s CTR. My views jumped 300% in just one month after using his thumbnails.',
-    avatar: 'https://i.postimg.cc/vBw4Z3bn/channels4-profile.jpg',
+    avatar: '/uploads/avatars/creator-0.jpg',
   },
   {
     name: 'Sarah Chen',
     role: 'Lifestyle Creator • 1M subs',
     content: 'I\'ve worked with many designers but R4MO is on another level. He understands what makes people click.',
-    avatar: 'https://i.pravatar.cc/150?img=5',
+    avatar: '/uploads/avatars/creator-1.jpg',
   },
   {
     name: 'Mike Johnson',
     role: 'Gaming YouTuber • 800K subs',
     content: 'The best investment I\'ve made for my channel. Professional, fast, and the results speak for themselves!',
-    avatar: 'https://i.pravatar.cc/150?img=3',
+    avatar: '/uploads/avatars/creator-2.jpg',
   },
   {
     name: 'Emma Wilson',
     role: 'Education Channel • 2M subs',
     content: 'Our click-through rate went from 4% to 14% after working with him. Absolutely incredible work!',
-    avatar: 'https://i.pravatar.cc/150?img=9',
+    avatar: '/uploads/avatars/creator-3.jpg',
   },
   {
     name: 'David Kim',
     role: 'Review Channel • 600K subs',
     content: 'Incredibly talented designer who actually understands YouTube. Worth every penny!',
-    avatar: 'https://i.pravatar.cc/150?img=8',
+    avatar: '/uploads/avatars/creator-4.jpg',
   },
   {
     name: 'Lisa Park',
     role: 'Vlog Channel • 350K subs',
     content: 'Working with R4MO was a game-changer. My videos finally get the attention they deserve!',
-    avatar: 'https://i.pravatar.cc/150?img=10',
+    avatar: '/uploads/avatars/creator-5.jpg',
   },
 ];
 
 // Scroll row images (derived from portfolio)
-const SCROLL_ROW_1 = PORTFOLIO_ITEMS.slice(0, 8).map(p => p.image);
-const SCROLL_ROW_2 = [...PORTFOLIO_ITEMS].reverse().slice(0, 8).map(p => p.image);
-const SCROLL_ROW_3 = PORTFOLIO_ITEMS.map(p => p.image).reverse();
+const totalItems = PORTFOLIO_ITEMS.length;
+const dynamicChunk = Math.ceil(totalItems / 3);
+const snaxImage = PORTFOLIO_ITEMS.find(p => p.client === 'Snax')?.image;
+const tigerImage = PORTFOLIO_ITEMS.find(p => p.client === 'Tiger')?.image;
+const SCROLL_ROW_1 = snaxImage
+  ? [snaxImage, ...PORTFOLIO_ITEMS.filter(p => p.client !== 'Snax').slice(0, dynamicChunk - 1).map(p => p.image)]
+  : PORTFOLIO_ITEMS.slice(0, dynamicChunk).map(p => p.image);
+const SCROLL_ROW_2 = tigerImage
+  ? [tigerImage, ...[...PORTFOLIO_ITEMS].reverse().filter(p => p.client !== 'Tiger').slice(0, dynamicChunk - 1).map(p => p.image)]
+  : [...PORTFOLIO_ITEMS].reverse().slice(0, dynamicChunk).map(p => p.image);
+const SCROLL_ROW_3 = PORTFOLIO_ITEMS.slice(dynamicChunk * 2).reverse().map(p => p.image);
 
 /* ============================================
    LIQUID GLASS BUTTON
@@ -204,7 +212,7 @@ function InfiniteScrollRow({
         <div className={`flex ${gapClass} whitespace-nowrap ${animId}-row`}>
           {[...images, ...images].map((img, i) => (
             <div key={`${animId}-${i}`} className={`relative flex-shrink-0 ${widthClass} aspect-video ${radiusClass} overflow-hidden cursor-pointer`}>
-              <img src={img} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" style={{ transform: 'translateZ(0)' }} />
+              <img src={img} alt="" loading="lazy" decoding="async" fetchPriority="low" width={640} height={360} className="w-full h-full object-cover" style={{ transform: 'translateZ(0)' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-200" />
             </div>
           ))}
